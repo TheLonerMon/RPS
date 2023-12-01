@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/modnorm.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Rock, Paper, Scissors...</h1>
+    <div class="container">
+        <div class="choice">
+            <div class="pchoice">
+                <h2>Shoot!</h2>
+                <div class="images">
+                    <img id="r-img" src="images/Wock.jpg" alt="hand as rock" onclick="play('rock')">
+                    <img id="p-img" src="images/Papper.jpg" alt="hand as paper" onclick="play('paper')">
+                    <img id="s-img" src="images/Sissow.jpg" alt="hand as scissors" onclick="play('scissors')">
+                </div>
+            </div>
+            <div class="ochoice">
+                <h2>Opponent choose...</h2>
+                <img id="o-img" src="images/Brad.jpg">
+            </div>
+        </div>
+        <div class="scoreboard">
+                <h2 id="result">Result</h2>
+                <div id="play" class="score">
+                    <p id="wins">0</p>
+                    <p class="label">Wins</p>
+                </div>
+                <div id="neither" class="score">
+                    <p id="ties">0</p>
+                    <p class="label">Ties</p>
+                </div>
+                <div id="opp" class="score">
+                    <p id="losses">0</p>
+                    <p class="label">Losses</p>
+                </div>
+                <div class="reset">
+                    <button onclick="reset()">Reset Score</button>
+                </div>
+        </div>
+            <script src="script.js"></script>
+        </div>
+</body>
+</html>
