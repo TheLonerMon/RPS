@@ -74,6 +74,6 @@ function reset() {
     document.getElementById('wins').innerHTML = sessionStorage.getItem("winCount");
     document.getElementById('ties').innerHTML = sessionStorage.getItem("tieCount");
     document.getElementById('losses').innerHTML = sessionStorage.getItem("lossCount");
-    document.getElementById('o-img').src = "svg/mystery.svg";
+    document.getElementById('o-img').src = "images/Brad.jpg";
     document.getElementById('result').innerHTML = "Result";
 }
